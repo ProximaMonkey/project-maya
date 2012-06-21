@@ -95,12 +95,8 @@ ProjectMaya = new Class({
 	},
 
 	playSound: function(name) {
-		this.db.getSound(name, function(result) {
-			console.log("Received a sound from the database for: ", name);
-			var a = new Element('audio', { 'data-id': name,  src: 'data:audio/wav;base64,'+result.base64wave}).inject(document.body).play();
-		}, function(r) { 
-			console.log("Could not find sound: ", result);
-		});
+		var a = new Element('audio', { 'data-id': name,  src: 'audio/'+name+'.wav'}).inject(document.body).play();
+		
 	},
 
 
