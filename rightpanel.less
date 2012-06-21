@@ -1,0 +1,192 @@
+#rightpanel {
+
+	position: fixed;
+	right: 0;
+	width: 20%;
+	top: 0;
+	bottom: 0;
+	background-color: #EFEFEF;
+	padding-left: 20px;
+	color: blackwhite;
+
+	DIV {
+		border-bottom: 1px solid black;
+		margin-right: 10px;
+		position: relative;
+	}
+	button {
+		-webkit-transition:none;
+		-webkit-transform: none !important;
+	}
+	button.duo:first-child {
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+	button.duo:last-child {
+		border-top: 0;
+		border-top-right-radius: 0;
+		border-top-left-radius: 0;
+	}
+	.timer > p{
+		text-align: right;
+	}
+
+	button {
+		width: 100%;
+		min-height: 35px;
+	}
+	.currenttime {
+		text-align: right;
+		font-size: 1.3em;
+	}
+
+	.done {
+		position: absolute;
+		bottom: 10px;
+		right:0;
+		left:10px;
+	}
+	div:last-child {
+		border-bottom:0;
+	}
+	.actionbuttons {
+		left: 10px;
+		border-bottom: 0;
+		position: absolute;
+		right:0;
+		bottom: 90px;
+		-webkit-transition: all 0.5s ease-in;
+	}
+	
+	button.active {
+		color: black;
+	}
+	.apotheek >p {
+		padding-left: 35px;
+		line-height: 35px;
+	}
+
+
+	.sprite {
+		height: 50px;
+
+		span {
+			position: absolute;
+			top:0;
+			left:0; 
+		}
+
+
+	}
+ 
+	p {
+		font-size: 21px;
+	}
+
+	.clock {
+		margin-left: -30px;
+		margin-top: -22px;
+	}
+
+	.countdown {
+		margin-left: 0px;
+		margin-top: -12px;
+		position: relative;
+		height: 145px;
+		.sprite:first-child  {
+			position: absolute;
+			right: 0;
+			height: 50px;
+			top: 0;
+			left: -28px;
+		}
+		
+		.pl  {
+			position: absolute;
+			left: -26px;
+			height: 50px;
+			top: 40px;
+		}	
+	}
+
+	#time {
+		position: absolute;
+		right: 0;
+		top: 0px;
+	}
+
+	#totalplus {
+		right: 0;
+		position: absolute;
+		top: 40px;
+		
+	}
+
+	#globalplus {
+		right: 0;
+		position: absolute;
+		top: 81px;
+		
+	}
+
+	input[name=plusses] {
+		-webkit-user-select: none;
+		-webkit-user-modify: readonly;
+		border:0;
+		background-color:transparent;
+		color: white;
+	}
+
+	.apotheek {
+		margin-top: -15px;
+	
+		.sprite {
+			left: -30px;
+			position: absolute;
+			top: -25px;
+		}
+		 p {
+			padding-left: 40px;
+		}
+	}
+
+	#logstatus {
+		opacity: 0;
+		-webkit-transition: all 0.5s ease-in-out;
+	}
+
+	#logstatus.active {
+		opacity: 1;
+	}
+
+	.activeuser {
+		min-height: 55px;
+		width: 100%;
+		border-bottom: 1px solid white;
+		
+		.sprite {
+			left: -30px;
+			position: absolute;
+			top: -28px;
+		}
+		p {
+			padding-left: 40px;
+			position: relative;
+			width: 100%;
+			margin-top:15px;
+			font-style:italic;
+		}
+	}
+
+	.backbutton{
+		visibility: hidden;
+		position: absolute;
+		left: 10px;
+		right:0;
+		bottom: 90px;
+		border-bottom:0;
+		-webkit-transform: translateX(400px);
+		-webkit-transition: all 0.5s ease-in;
+	}
+
+}

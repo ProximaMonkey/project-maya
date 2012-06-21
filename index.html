@@ -1,0 +1,82 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="apple-touch-startup-image" href="startup-screen.png">
+	<link rel="apple-touch-icon-precomposed" href="icon.jpg">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>Project Maya</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+	<link rel='stylesheet' href='keyframes.css' />
+	<link rel='stylesheet/less' href='sprite.less' />
+	<link rel='stylesheet/less' href='style.less' />
+	<link rel='stylesheet/less' href='rightpanel.less' />
+	<script src='less-1.1.4.js'></script>
+	<script src='mootools-core.js'></script>
+	<script src='mootools-more.js'></script>
+	<script src='channels.js'></script>
+	<script src='projectmaya.js'></script>
+	
+	<!-- <script src="https://getfirebug.com/firebug-lite-beta.js">
+{
+    overrideConsole: true,
+    startInNewWindow: false,
+    startOpened: true,
+    enableTrace: false
+}
+</script> -->
+</head>
+<body>
+<div id='app' class='loading'>
+ <div id='loader' class='page'>
+	<h2>Project Maya</h2>
+ </div>
+ <div id='actionpicker' class='page'>
+	<div class='tiles'>
+		
+	</div>	
+	<div id='rightpanel'>
+		
+		
+		<div class='actionbuttons'>
+			<button class='duo tile inverted' id='home'>Home</button>
+			<button class='duo tile ' id='panel2'>Panel 2</button>
+		</div>		
+
+		
+	</div>
+ </div>
+ 
+ <div id='databasesetup' class='page'>
+		<h2>Hello, seems like it's your first time here. Let's inject some sounds into your database.</h2>
+
+		<div id='status'>
+			Processing query:
+			<p id='query'></p>
+		</div>
+ </div>
+
+<script type='text/javascript'>
+
+	window.addEvent('load', function() {
+		window.projectmaya = new ProjectMaya();
+	});
+
+	document.body.addEventListener('touchmove', function(e) { 
+		e.preventDefault();
+	}, false);
+
+	window.addEvent('resize', function() {
+		var orientation = document.body.clientHeight > document.body.clientWidth ? 'vertical' : 'horizontal';
+		document.body.setAttribute('class', 'layout-'+orientation);
+		window.scrollTo(0,0);
+	});
+
+	window.fireEvent('resize');
+
+	localStorage.clear();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+.sprite {
+	white-space: nowrap; 
+	line-height: 80px; 
+	width: 88px;
+	display: inline-block; padding: 2px; margin: 2px;
+}
+
+.sprite span  { 
+	background-image: url('images/appicons-tiled.png'); 
+	background-repeat: no-repeat; 
+	width: 88px;
+	text-indent: 88px; 
+	height: 80px;
+	display: inline-block; 
+	float:left;
+}
+
+
+span.list { background-position: 0px 0px } 
+span.list.v1 { background-position: -88px 0px } 
+span.list.v2 { background-position: -176px 0px } 
+span.bag { background-position: 0px -80px } 
+span.bag.v1 { background-position: -88px -80px } 
+span.bag.v2 { background-position: -176px -80px } 
+span.pills { background-position: 0px -160px } 
+span.pills.v1 { background-position: -88px -160px } 
+span.pills.v2 { background-position: -176px -160px } 
+span.a1 { background-position: 0px -240px } 
+span.a1.v1 { background-position: -88px -240px } 
+span.a1.v2 { background-position: -176px -240px } 
+span.a2 { background-position: 0px -320px } 
+span.a2.v1 { background-position: -88px -320px } 
+span.a2.v2 { background-position: -176px -320px } 
+span.love { background-position: 0px -400px } 
+span.love.v1 { background-position: -88px -400px } 
+span.love.v2 { background-position: -176px -400px } 
+span.phone { background-position: 0px -480px } 
+span.phone.v1 { background-position: -88px -480px } 
+span.phone.v2 { background-position: -176px -480px } 
+span.plane { background-position: 0px -560px } 
+span.plane.v1 { background-position: -88px -560px } 
+span.plane.v2 { background-position: -176px -560px } 
+span.mosquito { background-position: 0px -640px } 
+span.mosquito.v1 { background-position: -88px -640px } 
+span.mosquito.v2 { background-position: -176px -640px } 
+span.hospital { background-position: 0px -720px } 
+span.hospital.v1 { background-position: -88px -720px } 
+span.hospital.v2 { background-position: -176px -720px } 
+span.hospitalbag { background-position: 0px -800px } 
+span.hospitalbag.v1 { background-position: -88px -800px } 
+span.hospitalbag.v2 { background-position: -176px -800px } 
+span.dots { background-position: 0px -880px } 
+span.dots.v1 { background-position: -88px -880px } 
+span.dots.v2 { background-position: -176px -880px } 
+span.pause { background-position: 0px -960px } 
+span.pause.v1 { background-position: -88px -960px } 
+span.pause.v2 { background-position: -176px -960px } 
+span.plussomething { background-position: 0px -1040px } 
+span.plussomething.v1 { background-position: -88px -1040px } 
+span.plussomething.v2 { background-position: -176px -1040px } 
+span.plusone { background-position: 0px -1120px } 
+span.plusone.v1 { background-position: -88px -1120px } 
+span.plusone.v2 { background-position: -176px -1120px } 
+span.mix { background-position: 0px -1200px } 
+span.mix.v1 { background-position: -88px -1200px } 
+span.mix.v2 { background-position: -176px -1200px } 
+span.mixmagic { background-position: 0px -1280px } 
+span.mixmagic.v1 { background-position: -88px -1280px } 
+span.mixmagic.v2 { background-position: -176px -1280px } 
+span.hand { background-position: 0px -1360px } 
+span.hand.v1 { background-position: -88px -1360px } 
+span.hand.v2 { background-position: -176px -1360px } 
+span.clock { background-position: 0px -1440px } 
+span.clock.v1 { background-position: -88px -1440px } 
+span.clock.v2 { background-position: -176px -1440px } 
+span.timer { background-position: 0px -1520px } 
+span.timer.v1 { background-position: -88px -1520px } 
+span.timer.v2 { background-position: -176px -1520px } 
+span.plus { background-position: 0px -1600px } 
+span.plus.v1 { background-position: -88px -1600px } 
+span.plus.v2 { background-position: -176px -1600px } 
+span.pharma { background-position: 0px -1680px } 
+span.pharma.v1 { background-position: -88px -1680px } 
+span.pharma.v2 { background-position: -176px -1680px } 
+span.pop { background-position: 0px -1760px } 
+span.pop.v1 { background-position: -88px -1760px } 
+span.pop.v2 { background-position: -176px -1760px } 
+span.pharma2 { background-position: 0px -1840px } 
+span.pharma2.v1 { background-position: -88px -1840px } 
+span.pharma2.v2 { background-position: -176px -1840px } 
+span.house { background-position: 0px -1920px } 
+span.house.v1 { background-position: -88px -1920px } 
+span.house.v2 { background-position: -176px -1920px } 
+

@@ -1,0 +1,38 @@
+.transform(@effect: scale(1), @origin:center center) {
+	-webkit-transform: @effect;
+	-moz-transform: @effect;
+	-webkit-transform-origin: @origin;
+	-moz-transform-origin: @origin;
+}
+
+.animate(@anim: fadein, @duration:1s, @delay:0s, @direction:forwards, @timing:ease-out, @howmany:1) {
+	-webkit-animation: @anim;
+	-webkit-animation-duration: @duration;
+	-webkit-animation-iteration-count: @howmany;
+	-webkit-animation-timing-function: @timing;
+	-webkit-animation-direction: @direction;
+	-webkit-animation-fill-mode: @direction;
+	-webkit-animation-delay: @delay;
+	-webkit-transform: all @duration @timing;
+
+	-moz-animation: @anim;
+	-moz-animation-duration: @duration;
+	-moz-animation-iteration-count: @howmany;
+	-moz-animation-direction: @direction;
+	-moz-animation-fill-mode: @direction;
+	-moz-animation-timing-function: timing;
+	-moz-animation-delay: @delay;
+	-moz-transform: all @duration @timing;
+}
+
+.delay(@delay:0.5s) {
+	-webkit-animation-delay: @delay !important;
+	-moz-animation-delay: @delay;
+}
+
+.pos(@left: 0px, @top: 0px, @right:inherit, @method:absolute) {
+	position: @method;
+	top: @top;
+	left: @left;
+	right: @right;
+}

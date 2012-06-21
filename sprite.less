@@ -1,0 +1,76 @@
+.sprite {
+	white-space: nowrap; 
+	line-height: 0; 
+	width: 88px;
+	display: inline-block; padding: 2px; margin: 2px;
+	position: absolute; 
+	bottom: 5px; 
+	left: 0px;
+}
+
+button.sprite {
+	background: 0;
+	border: 0;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 0;
+	left: auto;
+}
+
+
+.sprite {
+	form:first-child {
+		background-image: none;
+		display: inline-block;
+		height: 55px;
+	}
+	:first-child:not(form)  { 
+		background-image: url('images/bubble.png'); 
+		background-repeat: no-repeat; 
+		width: 88px;
+		height: 55px;
+		display: inline-block; 
+	}
+	span {
+		height: 82px !important;
+	}
+
+	.speech { background-position: 0px 0px } 
+	
+}
+
+
+.inverted .sprite {
+	
+	.speech { background-position: -88px 0px } 
+}
+
+
+.disabled .sprite {
+	
+	.speech { background-position: -88px 0px } 
+	
+}
+
+
+.sprite ::-webkit-input-placeholder {
+	color: lighten(#1d73ac, 40%);
+	text-align: left;
+	 -webkit-appearance: none;
+	 text-indent: 0;
+}
+
+.disabled input[type=tel], .tile.disabled ::-webkit-input-placeholder {
+	color: gray !important;
+	text-align: left;
+	-webkit-appearance: none;
+	
+	-webkit-user-select: none;
+	-webkit-user-modify: readonly;
+	
+}
+
+.tile.disabled ::-webkit-input-placeholder {
+	color: gray;
+}
